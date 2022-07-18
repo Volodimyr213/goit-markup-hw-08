@@ -1,0 +1,92 @@
+
+/* постійні клієнти */
+
+.customers__title{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+     color: #212121;
+}
+
+.customers-list{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width:  480px) {
+        flex-basis: calc((100% - 60px) / 2);
+    
+    }
+    @media screen and (min-width:  768px) {
+        flex-basis: calc((100% - 90px) / 3);
+    
+    }
+    @media screen and (min-width:  1200px) {
+        flex-basis: calc((100% - 180px) / 6);
+    
+    }
+    justify-content: center;
+
+}
+
+.customers-link{
+   
+     width: 210px;
+     height: 92px; 
+     @media screen and (min-width:  768px) {
+        width: 226px;
+        height: 92px;
+    }
+    @media screen and (min-width:  1200px) {
+        width: 170px;
+        height: 92px;
+    }
+    
+    }
+    
+.customers-linky{
+    transition-property:border; 
+    transition-duration:250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    outline: transparent;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    
+    &:hover,&:focus{
+       border: 1px solid var(--accent-color);
+      } 
+}
+
+
+.customers-icon{
+    transition-property:fill ; 
+    transition-duration:250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    fill: #AFB1B8;
+
+    .customers-linky:hover &,.customers-linky:focus &{
+          fill: var(--accent-color);
+        }
+
+}
+
+
+
+
+
+
+
