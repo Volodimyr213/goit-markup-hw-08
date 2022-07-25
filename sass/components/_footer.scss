@@ -3,43 +3,54 @@
 .section-footer{
     background: #2F303A;
   
-    padding-top: 60px;
-    padding-bottom: 60px;   
-}
+     padding-top: 60px;
+     padding-bottom: 60px;   
+ }
 .footer{
-    
-    width: 100%;
-    display: flex;  
-    flex-wrap: wrap;
-   
-        
-        @media screen and(max-width:768px) {
-            flex-direction: column;
-            
-        }
-        color: var(--prymory-white-color);
-        @media screen and( min-width:768px) {
-            justify-content: center;
-        }
-        @media screen and( min-width:1200px) {
+      @media screen and( min-width:1200px) {
             align-items: baseline; 
-        }
+            display: flex; 
+      }
    
  }
+
+ .footer__conteiner-flex{
+    margin-bottom: 60px;
+   
+   
+    @media screen and( min-width:768px) {
+        display: flex;
+        align-items: baseline;
+     
+    }
+    
+    @media screen and( min-width:1200px) {
+        margin-bottom: 0;
+       
+  
+     
+    }
+
+ }
+
  .footer__contact{
+    margin-bottom: 60px;
     text-align: center;
    
 
-    margin-bottom: 60px;
+ 
 
     @media screen and( min-width:768px) {
         width: 50%;
+        margin-bottom:0;
+       
        
     }
     @media screen and( min-width:1200px) {
         width: auto;
         margin-bottom: 0;
         text-align: left;
+     
     }
 }
     
@@ -54,7 +65,7 @@
 
 .footer__join{
    
-    margin-bottom: 60px;
+  
     @media screen and( min-width:768px) {
         width: 50%;
     }
@@ -62,6 +73,7 @@
         width: auto;
         margin-left: 70px;
         margin-bottom: 0;
+        
     }
 }
 .join-title{
@@ -145,10 +157,19 @@
 }
 
 .footer__field{
+    // padding-left: 150px;
+    // padding-right: 150px;
+    @media screen and( min-width:768px) {
+        padding-left: 150px;
+        padding-right: 150px;
+        
+    }
   
 
     @media screen and( min-width:1200px) {
-        margin-left: 93px;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
         
     }
 
@@ -163,9 +184,13 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
+   
 
     color: var(--prymory-white-color);
+    @media screen and( max-width:1199px) {
+    text-align: center;   
+    }
+
     @media screen and( min-width:1200px) {
         margin-right: 12px;
         
@@ -186,6 +211,7 @@
     
     height: 50px;
     margin-bottom: 20px;
+   
 
 
     padding-left: 4.5%;
@@ -215,6 +241,7 @@
 @media screen and( min-width:1200px) {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0px;
 }
 }
 

@@ -121,11 +121,19 @@
     .contacts__item{
         @media screen and (min-width:1200px) {
             margin-right: 30px;
-            margin-right: 0;
+           
             &:last-child{
               margin-right: 0px;}
            }  
         }
+
+        .contacts__item-tel{
+            padding-bottom: 20px;      
+        }
+        .contacts__item-email{
+            padding-top: 20px;
+        }
+    
 
     .contacts__item-link{
             
@@ -146,6 +154,7 @@
             &:hover,
             &:focus{
                 color: var(--accent-color);}
+               
 
                 @media screen and (min-width:1200px) {
                     padding-top: 32px;
@@ -153,6 +162,10 @@
                     line-height: 1.17;
                    }  
     }
+   
+
+
+
     
     .contacts__icon-envelope{
         width: 14px;

@@ -18,6 +18,7 @@
 
    </head> 
   <body class="body">
+    
      <header class="header">
         <div class="conteiner header-conteiner">
 
@@ -52,7 +53,7 @@
 
               <ul class="contacts" >
                   <li class="contacts__item">
-                      <a class="contacts__item-link" href="mailto:info@devstudio.com">
+                      <a class="contacts__item-link contacts__item-email" href="mailto:info@devstudio.com">
                         <svg class="contacts__icon-envelope">
                           <use href="./images/icons.svg#icon-envelope-hover"> 
                           </use> 
@@ -62,7 +63,7 @@
                   </li>
               
                   <li class="contacts__item">
-                      <a class="contacts__item-link" href="tel:+38096111111">
+                      <a class="contacts__item-link contacts__item-tel" href="tel:+38096111111">
                         <svg class="contacts__icon-phone"  >
                           <use href="./images/icons.svg#icon-phone">
                           </use> 
@@ -157,21 +158,33 @@
 
           <li class="work__link">
             <div class="work__card" >
-              <img class="work-img" src="./images/Nout.png" alt="Работа на ноутбуке" width="370" />
+              <img class="work-img"
+              srcset="./images/Nout.png 1x,./images/Nout2x.png 2x " 
+              src="./images/Nout.png" 
+              alt="Работа на ноутбуке" 
+              width="370" />
               <p class="work__img-txt">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </div>
          </li>
 
           <li class="work__link">
             <div class="work__card" >
-              <img class="work__img" src="./images/Smartphon.png" alt="Держит телефон" width="370" />
+              <img class="work__img" 
+              srcset="./images/Smartphon.png 1x,./images/Smartphon2x.png 2x " 
+              src="./images/Smartphon.png" 
+              alt="Держит телефон" 
+              width="370" />
               <p class="work__img-txt">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </div>
           </li>
 
           <li class="work__link">
             <div class="work__card" >
-            <img class="work__img" src="./images/tublpc.png" alt="держит планшет" width="370" />
+            <img class="work__img" 
+            srcset="./images/tublpc.png 1x,./images/tublpc2x.png 2x "
+            src="./images/tublpc.png" 
+            alt="держит планшет" 
+            width="370" />
             <p class="work__img-txt">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
           </div>
           </li>
@@ -184,7 +197,26 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-card">
-            <img class="team-img" src="./images/igor.jpg" alt="фото Игоря" width="270" />
+            <picture>
+                <source  srcset="./images/Igor.jpg 1x,
+                                ./images/Igor-img-deskgtop2x.jpg 2x "
+                          media="(min-width: 1200px)"/>
+
+                <source   srcset="./images/Igor-img-tublet.jpg 1x,
+                                  ./images/Igor-img-tublet2x.jpg 2x "
+                          media="(min-width: 768px)"/>
+
+                <source  srcset="./images/Igor-img-mob.jpg 1x,
+                                ./images/igor-img-mob2x.jpg 2x "
+                          media="(min-width: 480px)"/>
+
+                <img class="team-img" 
+                      src="./images/Igor-img-mob.jpg"
+                      alt="фото Игоря" 
+                      width="450" />
+            </picture>
+
+            
             <div class="img-description">
               <h3 class="team-title-player">Игорь Демьяненко</h3>
               <p class="team-text">Product Designer</p>
@@ -222,7 +254,25 @@
           </div>
           </li>
           <li  class="team-card">
-            <img class="team-img" src="./images/olga.jpg" alt="фото Ольги" width="270" />
+            <picture>
+              <source  srcset="./images/olga.jpg 1x,
+                              ./images/Olga-img-deskgtop2x.jpg 2x "
+                        media="(min-width: 1200px)"/>
+
+              <source   srcset="./images/Olga-img-tublet.jpg 1x,
+                                ./images/Olga-img-tublet2x.jpg 2x "
+                        media="(min-width: 768px)"/>
+
+              <source  srcset="./images/Olga-img-mob.jpg 1x,
+                               ./images/Olga-img-mob2x.jpg 2x "
+                        media="(min-width: 480px)"/>
+
+              <img class="team-img" 
+                    src="./images/Olga-img-mob.jpg"
+                    alt="фото Игоря" 
+                    width="450" />
+          </picture>
+
             <div class="img-description">
               <h3 class="team-title-player">Ольга Репина</h3>
               <p class="team-text">Frontend Developer</p>
@@ -260,7 +310,25 @@
           </div>
           </li>
           <li  class="team-card">
-            <img class="team-img" src="./images/nikolaj.jpg" alt="фото Николая" width="270" />
+            <picture>
+              <source  srcset="./images/nikolaj.jpg 1x,
+                              ./images/Nik-img-desktop2x.jpg 2x "
+                        media="(min-width: 1200px)"/>
+
+              <source   srcset="./images/Nik-img-tublet.jpg 1x,
+                                ./images/Nik-img-tublet2x.jpg 2x "
+                        media="(min-width: 768px)"/>
+
+              <source  srcset="./images/Nik-img-mob.jpg 1x,
+                              ./images/Nik-img-tublet2x.jpg 2x "
+                        media="(min-width: 480px)"/>
+
+              <img class="team-img" 
+                    src="./images/Nik-img-mob.jpg"
+                    alt="фото Игоря" 
+                    width="450" />
+          </picture>
+            
             <div class="img-description">
               <h3 class="team-title-player">Николай Тарасов</h3>
               <p class="team-text">Marketing</p>
@@ -298,7 +366,24 @@
             </div>
           </li>
           <li  class="team-card">
-            <img class="team-img" src="./images/mihail.jpg" alt="фото Михаил" width="270" />
+            <picture>
+              <source  srcset="./images/mihail.jpg 1x,
+                              ./images/Miha-img-desktop2x.jpg 2x "
+                        media="(min-width: 1200px)"/>
+
+              <source   srcset="./images/miha-img-tublet.jpg 1x,
+                                ./images/miha-img-tublet2x.jpg 2x "
+                        media="(min-width: 768px)"/>
+
+              <source  srcset="./images/miha-img-mob.jpg 1x,
+                               ./images/miha-img-mob2x.jpg 2x "
+                        media="(min-width: 480px)"/>
+
+              <img class="team-img" 
+                    src="./images/miha-img-mob.jpg"
+                    alt="фото Игоря" 
+                    width="450" />
+          </picture>
             <div class="img-description">
               <h3 class="team-title-player">Михаил Ермаков</h3>
               <p class="team-text">UI Designer</p>
@@ -408,57 +493,60 @@
     </main>  
      <footer class="section-footer">
       <div class="conteiner footer">
-        <div class="footer__contact">
 
-            <a class="logo logo--footer" lang="en" href="">Web<span class="logo--wite" >Studio
-              </span>
-            </a>
+          <div class="footer__conteiner-flex">
 
-              <address class="section-adress" >
-                <ul class="footer-list">
-                  <li class="footer-link"><a class="footer-link-carrent" href="">г. Киев, пр-т Леси Украинки</a></li>
-                  <li class="footer-link"><a class="footer-link-cotaсt" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                  <li class="footer-link"><a class="footer-link-cotaсt" href="tel:+38096111111">+38 096 111 11 11</a></li>
-                </ul>
-                  
-              </address>
-        </div>
+             <div class="footer__contact">
 
-        <div class="footer__join">
-              <strong class="join-title">Присоединяйтесь</strong>
+                  <a class="logo logo--footer" lang="en" href="">Web<span class="logo--wite" >Studio
+                    </span>
+                  </a>
 
-              <ul class="team-icon">
-                <li class="team-icon-link footer-icon">
-                    <a href="" class="master-icon-link"> 
-                      <svg class="master-icon-svg footer-icon-svg" width=20px height="20px">
-                        <use href="./images/icons.svg#icon-instagram"></use>      
-                      </svg>
-                    </a>
-                </li>
-                <li class="team-icon-link footer-icon">
-                    <a class="master-icon-link" href="">
-                      <svg class="master-icon-svg footer-icon-svg" width=20px height="20px">
-                        <use href="./images/icons.svg#icon-twitter"></use>      
-                      </svg>
-                    </a>
-                </li>
-                <li class="team-icon-link footer-icon">
-                    <a class="master-icon-link" href="">
-                      <svg class="master-icon-svg footer-icon-svg" width=20px height="20px">
-                        <use href="./images/icons.svg#icon-facebook"></use>      
-                      </svg>
-                    </a>
-                </li>
-                <li class="team-icon-link footer-icon">
-                    <a class="master-icon-link" href="">
-                      <svg class="master-icon-svg footer-icon-svg" width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-linkedin"></use>      
-                      </svg>
-                    </a>
-                </li>
+                    <address class="section-adress" >
+                      <ul class="footer-list">
+                        <li class="footer-link"><a class="footer-link-carrent" href="">г. Киев, пр-т Леси Украинки</a></li>
+                        <li class="footer-link"><a class="footer-link-cotaсt" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-link"><a class="footer-link-cotaсt" href="tel:+38096111111">+38 096 111 11 11</a></li>
+                      </ul>
+                        
+                    </address>
+             </div>
 
-              </ul>
-        </div>
+             <div class="footer__join">
+                      <strong class="join-title">Присоединяйтесь</strong>
+
+                      <ul class="team-icon">
+                        <li class="team-icon-link footer-icon">
+                            <a href="" class="master-icon-link"> 
+                              <svg class="master-icon-svg footer-icon-svg" width=20px height="20px">
+                                <use href="./images/icons.svg#icon-instagram"></use>      
+                              </svg>
+                            </a>
+                        </li>
+                        <li class="team-icon-link footer-icon">
+                            <a class="master-icon-link" href="">
+                              <svg class="master-icon-svg footer-icon-svg" width=20px height="20px">
+                                <use href="./images/icons.svg#icon-twitter"></use>      
+                              </svg>
+                            </a>
+                        </li>
+                        <li class="team-icon-link footer-icon">
+                            <a class="master-icon-link" href="">
+                              <svg class="master-icon-svg footer-icon-svg" width=20px height="20px">
+                                <use href="./images/icons.svg#icon-facebook"></use>      
+                              </svg>
+                            </a>
+                        </li>
+                        <li class="team-icon-link footer-icon">
+                            <a class="master-icon-link" href="">
+                              <svg class="master-icon-svg footer-icon-svg" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-linkedin"></use>      
+                              </svg>
+                            </a>
+                        </li>
+                      </ul>
+              </div>
+          </div>
 
         <div class="footer__field">
         
@@ -551,7 +639,7 @@
                         <use href="./images/icons.svg#icon-Chekt"></use>
                       </svg>
                     </Span>
-                    Соглашаюсь с рассылкой и принимаю<a class="chekt-text__link">Условия договора</a>
+                    Соглашаюсь с рассылкой и принимаю<a class="chekt-text__link" href="">Условия договора</a>
                     <!-- &nbsp; -->
               
             </div>
