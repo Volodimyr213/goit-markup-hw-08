@@ -190,12 +190,6 @@
     @media screen and( max-width:1199px) {
     text-align: center;   
     }
-
-    @media screen and( min-width:1200px) {
-        margin-right: 12px;
-        
-    }
-
 }
 .footer-field__form{
     @media screen and( min-width:1200px) {
@@ -246,8 +240,11 @@
 }
 
 .footer-field__button{
-   display: block;
-   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+ 
    
     
    

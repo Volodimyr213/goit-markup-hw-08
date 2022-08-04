@@ -83,6 +83,7 @@
                 padding-right: 24px;
                 padding-left: 24px;
                 transform: translateY(101%);
+                overflow-y: scroll;
 
                 transition-property:transform;
                 transition: transform 250ms ;
@@ -122,6 +123,7 @@
         letter-spacing: 0.03em;
         color:var(--gray-color);
     }
-
+    
+   
    
  

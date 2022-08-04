@@ -107,15 +107,16 @@
    /* контакти */
 
     .contacts{
-        
-    
           display: flex;
-          gap: 10px;
-          flex-wrap: wrap;
           margin-left: auto;  
-         @media screen and (max-width:767px) {
-            display: none;}
-            
+
+           @media screen and (max-width:767px) {
+                display: none;}
+
+           @media screen and (max-width:1199px) {
+                gap: 10px;
+                flex-wrap: wrap;
+            }     
          }
 
     .contacts__item{
