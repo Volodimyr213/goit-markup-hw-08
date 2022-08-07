@@ -94,7 +94,7 @@ a {
 }
 
 .menu-button {
-  background-color: rgba(139, 13, 13, 0);
+  background-color: rgba(255, 255, 255, 0);
   z-index: 1;
   margin-left: auto;
 }
@@ -268,7 +268,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   padding: 48px 40px;
   background: #FFFFFF;
